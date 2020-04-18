@@ -1,0 +1,4 @@
+.now
+.idea
+api/config.yaml
+go.sum

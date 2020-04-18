@@ -1,0 +1,26 @@
+## Pines
+
+[Pines](https://github.com/xuthus5/pines)是一个基于 Go+Vue 构建的对象存储服务管理应用，目前集成了阿里云OSS，腾讯云COS，又拍云云存储。
+
+### ZEIT.CO无服务函数版本
+
+演示地址(请勿恶意上传)：[https://pines.xuthus.cc/](https://pines.xuthus.cc/)
+
+token:AKIDa3M4qZAKPOD6sSyVDwVOEyYlvwwrONxR
+
+[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://zeit.co/new/project?template=togo-soft/zeit-pines)
+
+### 构建与运行
+
+1. 重命名 config.yaml.example 为 config.yaml
+
+2. 修改 config.yaml 内容
+
+3. 从源代码运行或下载release版本直接运行
+
+```bash
+# 从源代码运行
+git clone https://github.com/xuthus5/pines
+cd pines
+go run .
+```

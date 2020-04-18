@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "functions": {
+    "api/ups.go": {
+      "maxDuration": 5,
+      "includeFiles": "config.yaml"
+    },
+    "api/oss.go": {
+      "maxDuration": 5,
+      "includeFiles": "config.yaml"
+    },
+    "api/cos.go": {
+      "maxDuration": 5,
+      "includeFiles": "config.yaml"
+    },
+    "api/login.go": {
+      "maxDuration": 5,
+      "includeFiles": "config.yaml"
+    },
+    "api/misc.go": {
+      "maxDuration": 5,
+      "includeFiles": "config.yaml"
+    }
+  },
+  "routes": [
+    { "src": "/api/cos", "dest": "api/cos.go" },
+    { "src": "/api/ups", "dest": "api/ups.go" },
+    { "src": "/api/oss", "dest": "api/oss.go" },
+    { "src": "/api/login", "dest": "api/login.go" },
+    { "src": "/api/misc", "dest": "api/misc.go" },
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "dist/$1" }
+  ]
+}
